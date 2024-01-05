@@ -14,7 +14,6 @@ export const CreateHuman = () => {
       <form
         onSubmit={(event) => {
           event.preventDefault();
-          // dispatch(humanSlice.actions.CreateHuman());
           dispatch(humanSlice.actions.add(name));
           setName('');
         }}
